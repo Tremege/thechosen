@@ -134,14 +134,17 @@ let counter name =
       send_names (names @ another)
     )
 
-  let build_table names =
+  let build_table btn names =
     let open D in
     if names = [] then pcdata "" else
-      table
-        (List.mapi (fun i name ->
-             tr [td [pcdata (string_of_int (i+1))];
-                 td [pcdata name]])
-            names)
+      div [
+        table
+          (List.mapi (fun i name ->
+            tr [td [pcdata (string_of_int (i+1))];
+                td [pcdata name]])
+             names);
+        btn;
+      ]
 }}
 
 (*
@@ -214,8 +217,11 @@ let () =
             let pick_nb_input = int_input ~input_type:`Number
                 ~a:[a_input_min 1.]
                 ~value:1
-                ()
-            in
+                () in
+            let pick_another_button =
+              button ~button_type:`Button
+                ~a:[a_onclick {{ pick_another %mininame }}]
+                [pcdata "Pick another one"] in
 
             admin desc mininame
               (C.node {{ R.pcdata React.S.(%c |> hold %n |> map string_of_int) }})
@@ -230,10 +236,7 @@ let () =
                     ];
                     br ();
                 
-                    C.node {{ R.node (React.S.map build_table names_s) }};
-                    button ~button_type:`Button
-                      ~a:[a_onclick {{ pick_another %mininame }}]
-                      [pcdata "Pick another one"];
+                    C.node {{ R.node (React.S.map (build_table %pick_another_button) names_s) }};
                   ];
                 ];
               ]
