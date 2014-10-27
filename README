@@ -9,15 +9,13 @@ Run `opam install batteries uri sqlite3-ocaml eliom`.
 Makefile targets
 ----------------
 
-Here's some help on how to work with this basic distillery project:
-
- - Test your application by compiling it and running ocsigenserver locally
+ - Test the application by compiling it and running ocsigenserver locally
      $ make test.byte (or test.opt)
 
  - Compile it only
      $ make all (or byte or opt)
 
- - Deploy your project on your system
+ - Deploy the project on your system
      $ sudo make install (or install.byte or install.opt)
 
  - Run the server on the deployed project
