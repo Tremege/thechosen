@@ -1,0 +1,5 @@
+PKG js_of_ocaml eliom.server batteries uri
+B _client
+B _server
+S _client
+S _server

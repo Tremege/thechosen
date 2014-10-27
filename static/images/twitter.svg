@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated.
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="412"
+   height="412"
+   viewBox="0 0 412 412"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg3435"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="twitter.svg"><metadata
+     id="metadata3442"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs3440" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="764"
+     inkscape:window-height="480"
+     id="namedview3438"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="206"
+     inkscape:cy="206"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3435"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><path
+     id="twitter-2-icon"
+     d="M 0,0 V 412 H 412 V 0 H 0 z m 320.942,157.125 c 3.553,79.059 -55.408,167.203 -159.768,167.203 -31.743,0 -61.289,-9.305 -86.163,-25.253 29.82,3.515 59.585,-4.758 83.217,-23.278 -24.596,-0.453 -45.356,-16.703 -52.508,-39.035 8.808,1.684 17.473,1.19 25.383,-0.962 -27.03,-5.433 -45.692,-29.784 -45.083,-55.826 7.577,4.211 16.245,6.74 25.46,7.032 -25.034,-16.73 -32.12,-49.786 -17.396,-75.045 27.723,34.006 69.143,56.385 115.857,58.729 -8.199,-35.16 18.474,-69.019 54.755,-69.019 16.168,0 30.776,6.825 41.029,17.75 12.804,-2.52 24.833,-7.198 35.694,-13.639 -4.197,13.126 -13.11,24.141 -24.715,31.098 11.37,-1.357 22.204,-4.379 32.284,-8.851 -7.534,11.272 -17.062,21.172 -28.046,29.096 z"
+     style="fill:#1f8dd6;fill-opacity:1"
+     inkscape:connector-curvature="0" /></svg>

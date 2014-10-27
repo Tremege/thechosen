@@ -1,0 +1,318 @@
+body {
+    margin: 0 auto;
+    color: #777;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+}
+/* HEADER */
+
+header,
+section#homepage {
+    color: #fff;
+    background: #1f8dd6;
+}
+header h1 {
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+header h1 a {
+    display: inline-block;
+    padding-left: 2em;
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url('images/logo.svg') no-repeat scroll left top / auto 1.5em transparent;
+}
+header h1 a:hover {
+    opacity: 0.95;
+}
+/* Home page */
+
+section#homepage {
+    padding: 4em 0;
+}
+section#homepage .about {
+    padding: 1.5em 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+section#homepage input[type="text"] {
+    width: calc(100% - 1.626em);
+    padding: 0.5em 0.75em;
+    color: #fff;
+    font-size: 2em;
+    border: 0.063em solid #fff;
+    background: none;
+}
+section#homepage input[type="text"]::-webkit-input-placeholder {
+    color: #fff
+}
+section#homepage input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+section#homepage input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+section#homepage input[type="text"]:-ms-input-placeholder {
+    color: #fff;
+}
+section#homepage input[type="text"]:focus {
+    color: #1f8dd6;
+    background: #fff;
+}
+section#homepage input[type="text"]:focus::-webkit-input-placeholder {
+    color: #1f8dd6;
+}
+section#homepage input[type="text"]:focus:-moz-placeholder {
+    /* Firefox 18- */
+    color: #1f8dd6;
+}
+section#homepage input[type="text"]:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #1f8dd6;
+}
+section#homepage input[type="text"]:focus:-ms-input-placeholder {
+    color: #1f8dd6;
+}
+section#homepage input[type="submit"] {
+    color: #1f8dd6;
+    font-size: 2em;
+    background: #fff;
+}
+section#homepage input[type="submit"]:hover {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+/* Home footer */
+
+#homefooter article {
+    display: inline-block;
+    padding: 0 2%;
+    width: 28%;
+    min-width: 15em;
+    max-width: 20em;
+    vertical-align: top;
+}
+#homefooter article h2 {
+    padding: 1em 0;
+    color: #1f8dd6;
+    font-size: 1.3em;
+}
+/* FOOTER */
+
+footer {
+    padding: 0.5em 0;
+    color: grey;
+    font-size: 0.9em;
+}
+footer a {
+    color: #777;
+}
+#footerbottom {
+    display: inline-block;
+    padding: 0.5em 0;
+    font-size: 0.9em;
+}
+#footerbottom hr {
+    width: 10em;
+}
+/*  ADMIN PAGE */
+
+#share {
+    margin-bottom: 1em;
+}
+#share input[type="text"] {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 10em);
+    height: 1em;
+}
+#share ul {
+    display: inline-block;
+    vertical-align: top;
+}
+#share li {
+    display: inline;
+    float: left;
+    margin-left: 0.5em;
+}
+#share li a {
+    text-decoration: none;
+}
+#share li img {
+    width: 3.25em;
+}
+section p {
+    margin: 1.5em 0;
+}
+#participants {
+    color: #1f8dd6;
+    font-size: 1.5em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+#chosen {
+    margin-top: 1.5em;
+}
+.pick {
+    display: inline-block;
+    margin-bottom: 1em;
+    color: #fff;
+    background: none;
+    border: 0.15em solid #1f8dd6;
+    border-radius: 10em;
+    cursor: pointer;
+    overflow: hidden;
+}
+.pick input[type="number"] {
+    vertical-align: top;
+    width: 2em;
+    padding-left: 0.5em;
+    line-height: 1.65em;
+    margin: 0;
+    color: #1f8dd6;
+    font-size: 2em;
+    background: none;
+    border: none;
+}
+.pick button {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.25em;
+    padding-right: 0.5em;
+    font-size: 2em;
+    line-height: 1.65em;
+    color: #1f8dd6;
+    background: none;
+    border-left: 0.063em solid #1f8dd6;
+    border-radius: 0;
+}
+.pick button:hover {
+    color: #fff;
+    background: #1f8dd6;
+}
+section table {
+    max-width: 100%;
+    margin: auto;
+    font-size: 1.3em;
+    text-align: left;
+    border: 0.063em solid #cbcbcb;
+}
+section td {
+    padding: 0.5em 1em;
+    border: 0.063em solid #cbcbcb;
+}
+section tr {
+    background: #f2f2f2;
+}
+section tr:nth-child(even) {
+    background: #fff;
+}
+#delete {
+    margin-top: 1.5em;
+    color: #ca3c3c;
+    font-size: 0.8em;
+}
+#delete a {
+    color: #ca3c3c;
+    font-style: italic;
+}
+/* COMMON */
+
+.wrap {
+    max-width: 35em;
+    margin: auto;
+}
+input[type="text"] {
+    max-width: calc(100% - 1.626em);
+    padding: 0.5em 0.75em;
+    color: #1f8dd6;
+    font-size: 1.5em;
+    border: 0.1em solid #1f8dd6;
+    background: none;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #1f8dd6;
+}
+input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #1f8dd6;
+}
+input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #1f8dd6;
+}
+input[type="text"]:-ms-input-placeholder {
+    color: #1f8dd6;
+}
+input[type="text"]:focus {
+    color: #fff;
+    background: #1f8dd6;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+input[type="text"]:focus:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+input[type="text"]:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+input[type="text"]:focus:-ms-input-placeholder {
+    color: #fff;
+}
+input[type="submit"],
+button {
+    margin: 1em auto;
+    padding: 0.3em 1.5em;
+    color: #fff;
+    font-size: 1.2em;
+    background: #1f8dd6;
+    border: none;
+    border-radius: 10em;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+button:hover {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+section h2 {
+    padding: 1em 0;
+    color: #1f8dd6;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+b {
+    font-weight: bold;
+}
+section p b {
+    color: #1f8dd6;
+}
+hr {
+    width: 10em;
+    background: #d0d0d0;
+    border: none;
+}
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 28em) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .wrap {
+        padding: 0 5%;
+    }
+    section table {
+        font-size: 1em;
+    }
+}
