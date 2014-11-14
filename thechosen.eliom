@@ -24,7 +24,7 @@ let db = Ocsipersist.open_table Config.db_name
 
 let fresh_name () =
   let next_char = function
-    | 'a'..'y' | 'A'..'Y' | '0'..'8' -> Some (Char.chr (Char.code c + 1))
+    | 'a'..'y' | 'A'..'Y' | '0'..'8' as c -> Some (Char.chr (Char.code c + 1))
     | 'z' -> Some 'A'
     | 'Z' -> Some '0'
     | _ -> None
