@@ -23,17 +23,11 @@ module TheChosen_app =
 let db = Ocsipersist.open_table Config.db_name
 
 let fresh_name () =
-  let next_char c =
-    if (Char.code c >= Char.code 'a' && Char.code c < Char.code 'z') ||
-       (Char.code c >= Char.code 'A' && Char.code c < Char.code 'Z') ||
-       (Char.code c >= Char.code '0' && Char.code c < Char.code '9') then
-      Some (Char.chr (Char.code c + 1))
-    else if c = 'z' then
-      Some 'A'
-    else if c = 'Z' then
-      Some '0'
-    else
-      None
+  let next_char = function
+    | 'a'..'y' | 'A'..'Y' | '0'..'8' -> Some (Char.chr (Char.code c + 1))
+    | 'z' -> Some 'A'
+    | 'Z' -> Some '0'
+    | _ -> None
   in
   let next name =
     let rec incr = function
@@ -198,7 +192,7 @@ let () =
       Ocsipersist.add db mininame (desc, Set.empty) >>= fun () ->
       set_participation mininame Admin >>= fun () ->
       Lwt.return (Eliom_service.preapply event_service mininame));
- 
+
   TheChosen_app.register
     ~service:event_service
     (fun mininame () ->
@@ -235,7 +229,7 @@ let () =
                         [pcdata "Pick"]
                     ];
                     br ();
-                
+
                     C.node {{ R.node (React.S.map (build_table %pick_another_button) names_s) }};
                   ];
                 ];
