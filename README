@@ -4,7 +4,7 @@ Instructions
 Install dependencies (using opam)
 ---------------------------------
 
-Run `opam install batteries uri sqlite3-ocaml eliom`.
+Run `opam install batteries uri sqlite3 eliom`.
 
 Makefile targets
 ----------------
